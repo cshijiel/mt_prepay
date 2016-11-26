@@ -65,3 +65,22 @@
         detailTextArea.val(msg);
     });
 })();
+
+
+(function() {
+    $('#submit').click(function() {
+
+        var defaultPart = $("form").serialize();
+        var checkboxNodes = $('input[type="checkbox"]');
+
+        var params = '';
+        for (var i = 0; i < checkboxNodes.length; i++) {
+            var node = $(checkboxNodes[i]);
+            var name = node.attr('name');
+            var flag = node.is(':checked');
+            params += '&' + name + '=' + flag;
+        }
+        defaultPart += params;
+        console.log(defaultPart);
+    });
+})();
