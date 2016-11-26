@@ -1,0 +1,15 @@
+body {
+    padding-top: 70px;
+}
+
+.detail-info {
+    margin-top: 15px;
+}
+
+.dependent-pre {
+    display: none;
+}
+
+.cooperation>button[data-step] {
+    margin-left: 25px;
+}

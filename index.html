@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>文档录入系统</title>
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Html Doc</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="step1">
+            <div class="form-group">
+                <h1>step 1</h1>
+                <input type="text" class="form-control" value="一 、景区情况/美团合作情况">
+            </div>
+            <div>
+              <textarea class="form-control" rows="4">
+1、
+  美团级别 ；国家级别 。</textarea>
+            </div>
+            <div class="checkbox">
+                <h4>美团历史合作选择: </h4>
+                <div class="cooperation">
+                    <label>
+                    <input type="checkbox"/> 有三方
+                    </label>
+                    <label class="switch-next">
+                    <input type="checkbox"/> 有直签
+                    </label>
+                    <label class="dependent-pre">
+                    <input type="checkbox"/> 直签是预付
+                    </label>
+                    <button class="btn btn-default btn-xs" data-step="levelDict">Submit</button>
+                </div>
+                <div class="detail-info">
+                    <textarea class="form-control" rows="6">请输入美团合作情况</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="step2">
+            <div class="form-group">
+                <h1>step 2</h1>
+                <input type="text" class="form-control" value="二 、竞对合作情况">
+            </div>
+            <div class="detail-info">
+                <textarea class="form-control" rows="4">1、携程：；佣金率 %
+2、去哪儿：；佣金率 %
+3、同程：；佣金率 %</textarea>
+            </div>
+            </<div>
+        </div>
+
+        <div class="step3">
+            <div class="form-group">
+                <h1>step 3</h1>
+                <input type="text" class="form-control" value="三 、付款方式与回款周期">
+            </div>
+            <div class="checkbox">
+                <h4>付款方式选择: </h4>
+                <div class="cooperation">
+                    <label>
+                        <input type="checkbox"/> 应季
+                        </label>
+                    <label class="switch-next">
+                        <input type="checkbox"/> 循环预付
+                        </label>
+                    <label class="dependent-pre">
+                        <input type="checkbox"/> 有首付
+                        </label>
+                    <button class="btn btn-default btn-xs" data-step="paymentDict">Submit</button>
+                </div>
+                <div class="detail-info">
+                    <textarea class="form-control" rows="6">请输入付款情况</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="step4">
+            <div class="form-group">
+                <h1>step 4</h1>
+                <input type="text" class="form-control" value="四 、票种覆盖">
+            </div>
+            <div class="detail-info">
+                <textarea class="form-control" rows="2">成人票
+                </textarea>
+            </div>
+        </div>
+
+        <div class="step5">
+            <div class="form-group">
+                <h1>step 5</h1>
+                <input type="text" class="form-control" value="五 、价格/是否lose">
+            </div>
+            <div>
+              <textarea class="form-control" rows="2">
+1、 元</textarea>
+            <div class="checkbox">
+                <h4>价格比较选择: </h4>
+                <div class="cooperation">
+                    <label class="switch-next">
+                        <input type="checkbox"/> 可以比较
+                        </label>
+                    <label class="dependent-pre">
+                        <input type="checkbox"/> 有lose
+                        </label>
+                    <button class="btn btn-default btn-xs" data-step="priceDict">Submit</button>
+                </div>
+                <div class="detail-info">
+                    <textarea class="form-control" rows="4">请输入价格情况</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="step6">
+            <div class="form-group">
+                <h1>step 6</h1>
+                <input type="text" class="form-control" value="六 、佣金情况">
+            </div>
+            <div class="detail-info">
+                <textarea class="form-control" rows="2">基础佣金： %（）
+后返佣金：
+                </textarea>
+            </div>
+        </div>
+
+        <div class="step7">
+            <div class="form-group">
+                <h1>step 7</h1>
+                <input type="text" class="form-control" value="七 、评估方法">
+            </div>
+
+            <div class="checkbox">
+                <h4>评估选择: </h4>
+                <div class="cooperation">
+                    <label>
+                        <input type="checkbox"/> 一次性预付
+                        </label>
+                    <label>
+                        <input type="checkbox"/> 正常转预付
+                        </label>
+                    <button class="btn btn-default btn-xs" data-step="evaluationDict">Submit</button>
+                </div>
+                <div class="detail-info">
+                    <textarea class="form-control" rows="6">请输入评估情况</textarea>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /container -->
+
+
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <script src="javascript/index.js"></script>
+
+</body>
+
+</html>
