@@ -21,7 +21,7 @@
     </nav>
 
     <div class="container">
-        <form action="doSth.do">
+        <form action="doSth.do" onsubmit="return false;">
 
             <div class="step1">
                 <div class="form-group">
@@ -97,8 +97,7 @@
                     <input type="text" class="form-control" value="四 、票种覆盖" name="ticketTypeTitle">
                 </div>
                 <div class="detail-info">
-                    <textarea class="form-control" rows="2" name="ticketTypeDetail">成人票
-                </textarea>
+                    <textarea class="form-control" rows="2" name="ticketTypeDetail">成人票</textarea>
                 </div>
             </div>
 
@@ -135,8 +134,7 @@
                 </div>
                 <div class="detail-info">
                     <textarea class="form-control" rows="2" name="commissionDetail">基础佣金： %（）
-后返佣金：
-                </textarea>
+后返佣金：</textarea>
                 </div>
             </div>
 
@@ -163,6 +161,8 @@
                 </div>
             </div>
             <button class="btn btn-info" id="submit" onclick="return false;"><span class="glyphicon glyphicon-eye-open"></span>  PreView</button>
+            <!--             <a class="btn btn-info" id="submit" href="preview.html" target="_blank"><span class="glyphicon glyphicon-eye-open"></span>  PreView</a>
+ -->
         </form>
     </div>
     <!-- /container -->
