@@ -1,5 +1,10 @@
 body {
-    padding: 70px 0px;
+    padding: 50px 0px;
+}
+
+h4{
+background-color: #d7ecf1;
+font-weight: bold;
 }
 
 .detail-info {
