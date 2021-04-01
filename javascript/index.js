@@ -122,9 +122,9 @@ function openWin(htmUrl, name) {
     win.focus(); //新窗口获得焦点
 }
 
-// go to shotcuts
-(function() {
-    setTimeout(function(){
-		window.location='https://www.icloud.com/shortcuts/69ecd360ae1846cd88b29649868bbf62'
-	}, 5000);
-})();
+// // go to shotcuts
+// (function() {
+//     setTimeout(function(){
+// 		window.location='https://www.icloud.com/shortcuts/69ecd360ae1846cd88b29649868bbf62'
+// 	}, 5000);
+// })();
