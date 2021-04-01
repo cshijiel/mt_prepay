@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>文档样式系统</title>
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">文档样式系统</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form action="doSth.do" onsubmit="return false;">
+
+            <div class="step1">
+                <div class="form-group">
+                    <h3>step 1</h3>
+                    <input type="text" class="form-control" value="一 、景区情况/美团合作情况" name="cooperationTitle">
+                </div>
+                <div>
+                    <textarea name='scene' class="form-control" rows="2">
+1、
+     美团级别 ；国家级别 。</textarea>
+                </div>
+                <div class="checkbox">
+                    <h4>美团历史合作选择: </h4>
+                    <div class="cooperation">
+                        <label>
+                    <input type="checkbox" name="isThirdParty"/> 有三方
+                    </label>
+                        <label class="switch-next">
+                    <input type="checkbox" name="isDirect"/> 有直签
+                    </label>
+                        <label class="dependent-pre">
+                    <input type="checkbox" name="isPrePay"/> 直签是预付
+                    </label>
+                        <button class="btn btn-default btn-xs" data-step="levelDict">Submit</button>
+                    </div>
+                    <div class="detail-info">
+                        <textarea name="cooperationDetail" class="form-control" rows="6"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step2">
+                <div class="form-group">
+                    <h3>step 2</h3>
+                    <input type="text" class="form-control" value="二 、竞对合作情况" name="competitorTitle">
+                </div>
+                <div class="detail-info">
+                    <textarea name="competitorDetail" class="form-control" rows="3">1、携程：；佣金率 %
+2、去哪儿：；佣金率 %
+3、同程：；佣金率 %</textarea>
+                </div>
+                </<div>
+            </div>
+
+            <div class="step3">
+                <div class="form-group">
+                    <h3>step 3</h3>
+                    <input type="text" class="form-control" value="三 、付款方式与回款周期" name="paymentTitle">
+                </div>
+                <div class="checkbox">
+                    <h4>付款方式选择: </h4>
+                    <div class="cooperation">
+                        <label>
+                        <input type="checkbox" name="isSeasonalProduct"/> 应季
+                        </label>
+                        <label class="switch-next">
+                        <input type="checkbox" name="isCyclePay"/> 循环预付
+                        </label>
+                        <label class="dependent-pre">
+                        <input type="checkbox" name="isDownPay"/> 有首付
+                        </label>
+                        <button class="btn btn-default btn-xs" data-step="paymentDict">Submit</button>
+                    </div>
+                    <div class="detail-info">
+                        <textarea class="form-control" rows="5" name="paymentDetail"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step4">
+                <div class="form-group">
+                    <h3>step 4</h3>
+                    <input type="text" class="form-control" value="四 、票种覆盖" name="ticketTypeTitle">
+                </div>
+                <div class="detail-info">
+                    <textarea class="form-control" rows="1" name="ticketTypeDetail">     成人票</textarea>
+                </div>
+            </div>
+
+            <div class="step5">
+                <div class="form-group">
+                    <h3>step 5</h3>
+                    <input type="text" class="form-control" value="五 、价格/是否lose" name="priceTitle">
+                </div>
+                <div>
+                    <textarea class="form-control" rows="1" name="priceDetail">
+1、 元</textarea>
+                    <div class="checkbox">
+                        <h4>价格比较选择: </h4>
+                        <div class="cooperation">
+                            <label class="switch-next">
+                        <input type="checkbox" name="isComparable"/> 可以比较
+                        </label>
+                            <label class="dependent-pre">
+                        <input type="checkbox" name="isLose"/> 有lose
+                        </label>
+                            <button class="btn btn-default btn-xs" data-step="priceDict">Submit</button>
+                        </div>
+                        <div class="detail-info">
+                            <textarea class="form-control" rows="1" name="priceCompareDetail"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step6">
+                <div class="form-group">
+                    <h3>step 6</h3>
+                    <input type="text" class="form-control" value="六 、佣金情况" name="commissionTitle">
+                </div>
+                <div class="detail-info">
+                    <textarea class="form-control" rows="2" name="commissionDetail">     基础佣金： %（）
+     后返佣金：</textarea>
+                </div>
+            </div>
+
+            <div class="step7">
+                <div class="form-group">
+                    <h3>step 7</h3>
+                    <input type="text" class="form-control" value="七 、评估方法" name="evaluationTitle">
+                </div>
+
+                <div class="checkbox">
+                    <h4>评估选择: </h4>
+                    <div class="cooperation">
+                        <label>
+                        <input type="checkbox" name="isFullyPay"/> 一次性预付
+                        </label>
+                        <label>
+                        <input type="checkbox" name="isChanged"/> 正常转预付
+                        </label>
+                        <button class="btn btn-default btn-xs" data-step="evaluationDict">Submit</button>
+                    </div>
+                    <div class="detail-info">
+                        <textarea class="form-control" rows="5" name="evaluationDetail"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-info" id="submit" onclick="return false;"><span class="glyphicon glyphicon-eye-open"></span>  PreView</button>
+            <!--             <a class="btn btn-info" id="submit" href="preview.html" target="_blank"><span class="glyphicon glyphicon-eye-open"></span>  PreView</a>
+ -->
+        </form>
+    </div>
+    <!-- /container -->
+  
+	<footer id="footer" class="footer">
+      	<div class="footer-inner">
+  			<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+		</div>
+    </footer>
+
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <script src="javascript/index.js"></script>
+
+</body>
+
+</html>

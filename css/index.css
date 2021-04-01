@@ -1,0 +1,27 @@
+body {
+    padding: 50px 0px;
+}
+
+h4{
+background-color: #d7ecf1;
+font-weight: bold;
+}
+
+.detail-info {
+    margin-top: 15px;
+}
+
+.dependent-pre {
+    display: none;
+}
+
+.cooperation>button[data-step] {
+    margin-left: 25px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f3f3f3;
+    padding: 13px 0 2px;
+}
